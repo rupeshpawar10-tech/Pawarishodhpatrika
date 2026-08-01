@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read for all users, write for platform operations
+    match /{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

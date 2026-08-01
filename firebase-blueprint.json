@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "dictionary": {
+      "title": "Pawari Dictionary Word",
+      "description": "Pawari words with phonetic, meanings, and approval status",
+      "type": "object",
+      "properties": {
+        "wordPawari": { "type": "string" },
+        "wordDevanagari": { "type": "string" },
+        "phoneticEn": { "type": "string" },
+        "partOfSpeech": { "type": "string" },
+        "meaningHindi": { "type": "string" },
+        "meaningEnglish": { "type": "string" },
+        "category": { "type": "string" },
+        "exampleSentencePawari": { "type": "string" },
+        "exampleSentenceHindi": { "type": "string" },
+        "status": { "type": "string" },
+        "submittedBy": { "type": "string" },
+        "submittedAt": { "type": "string" }
+      },
+      "required": ["wordPawari", "meaningHindi"]
+    },
+    "journal_articles": {
+      "title": "Journal Article",
+      "description": "Peer-reviewed research articles for ISSN 2583-987X",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "authors": { "type": "array", "items": { "type": "string" } },
+        "abstract": { "type": "string" },
+        "volume": { "type": "string" },
+        "issue": { "type": "string" },
+        "pdfUrl": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["title"]
+    },
+    "cms_content": {
+      "title": "CMS Page & Dynamic Content",
+      "description": "Dynamic homepage sections, menus, banners, footer, and page builder configurations",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "data": { "type": "object" }
+      },
+      "required": ["key"]
+    }
+  }
+}

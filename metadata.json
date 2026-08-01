@@ -1,0 +1,6 @@
+{
+  "name": "Pawari Research Journal - पवारी शोध पत्रिका",
+  "description": "Official Research Journal and Digital Library Platform of Maa Tapti Shodh Sansthan, Multai (M.P.), India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
